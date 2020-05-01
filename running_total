@@ -1,0 +1,12 @@
+print("Write a program that asks a user to continuously enter numbers and print out the running total so"
+"far. Once you get the program working, see if you can modify it so that the program stops when the user enters a 0.")
+
+print("To stop the running total enter 0.")
+total = 0
+
+while (True):
+    inp = int(input("Enter a value: "))
+    if inp == 0:
+        break
+    total=inp + total
+    print("Running total is "+str(total))
